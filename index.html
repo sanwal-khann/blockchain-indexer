@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Wallet</title>
+  </head>
+  <body>
+    <h1>Simple Wallet</h1>
+    <button onclick="connectToMetaMask()">Connect to MetaMask</button>
+    <div id="walletAddress"></div>
+    <input type="text" id="recipientAddress" placeholder="Recipient Address" />
+    <input type="text" id="amount" placeholder="Amount (in ETH)" />
+    <button onclick="sendToken()">Send Token</button>
+    <button onclick="getContractLogs()">Get Contract Logs</button>
+    <div id="logsContainer"></div>
+    <!-- New button -->
+    <script
+      src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"
+      type="application/javascript"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
